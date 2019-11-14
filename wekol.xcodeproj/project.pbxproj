@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2F8F4E8A6CF634FB406BC9F8 /* Pods_wekol.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B5FC38F2AD125ECDABCFEE6 /* Pods_wekol.framework */; };
 		4A700A832379200C00D76ED3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A700A822379200C00D76ED3 /* AppDelegate.swift */; };
 		4A700A852379200C00D76ED3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A700A842379200C00D76ED3 /* SceneDelegate.swift */; };
 		4A700A872379200C00D76ED3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A700A862379200C00D76ED3 /* ViewController.swift */; };
@@ -14,9 +15,38 @@
 		4A700A8D2379200C00D76ED3 /* wekol.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4A700A8B2379200C00D76ED3 /* wekol.xcdatamodeld */; };
 		4A700A8F2379200D00D76ED3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A700A8E2379200D00D76ED3 /* Assets.xcassets */; };
 		4A700A922379200D00D76ED3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A700A902379200D00D76ED3 /* LaunchScreen.storyboard */; };
+		4A8E733E237CD26F00F90ABE /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4A8E733B237CD26F00F90ABE /* README.txt */; };
+		4A8E733F237CD26F00F90ABE /* libWeChatSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A8E733D237CD26F00F90ABE /* libWeChatSDK.a */; };
+		4A8E7350237CD55E00F90ABE /* CollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A8E734B237CD55E00F90ABE /* CollectionCell.xib */; };
+		4A8E7351237CD55E00F90ABE /* MainCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A8E734C237CD55E00F90ABE /* MainCell.xib */; };
+		4A8E7352237CD55E00F90ABE /* MainCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8E734D237CD55E00F90ABE /* MainCell.swift */; };
+		4A8E7353237CD55E00F90ABE /* CollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8E734E237CD55E00F90ABE /* CollectionCell.swift */; };
+		4A8E7354237CD55E00F90ABE /* MainModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8E734F237CD55E00F90ABE /* MainModel.swift */; };
+		4A8E7375237CD60F00F90ABE /* DALabeledCircularProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A8E7357237CD60F00F90ABE /* DALabeledCircularProgressView.m */; };
+		4A8E7376237CD60F00F90ABE /* DACircularProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A8E7358237CD60F00F90ABE /* DACircularProgressView.m */; };
+		4A8E7377237CD60F00F90ABE /* MLPhotoBrowser.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 4A8E735C237CD60F00F90ABE /* MLPhotoBrowser.bundle */; };
+		4A8E7378237CD60F00F90ABE /* UIImage+MLBrowserPhotoImageForBundle.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A8E735E237CD60F00F90ABE /* UIImage+MLBrowserPhotoImageForBundle.m */; };
+		4A8E7379237CD60F00F90ABE /* MLPhotoBrowserPhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A8E7361237CD60F00F90ABE /* MLPhotoBrowserPhoto.m */; };
+		4A8E737A237CD60F00F90ABE /* MLPhotoBrowserDatas.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A8E7362237CD60F00F90ABE /* MLPhotoBrowserDatas.m */; };
+		4A8E737B237CD60F00F90ABE /* MLPhotoBrowserAssets.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A8E7363237CD60F00F90ABE /* MLPhotoBrowserAssets.m */; };
+		4A8E737C237CD60F00F90ABE /* MLPhotoBrowserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A8E7367237CD60F00F90ABE /* MLPhotoBrowserViewController.m */; };
+		4A8E737D237CD60F00F90ABE /* MLPhotoBrowserSignleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A8E736A237CD60F00F90ABE /* MLPhotoBrowserSignleViewController.m */; };
+		4A8E737E237CD60F00F90ABE /* MLPhotoBrowserPhotoScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A8E736D237CD60F00F90ABE /* MLPhotoBrowserPhotoScrollView.m */; };
+		4A8E737F237CD60F00F90ABE /* MLPhotoBrowserCustomToolBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A8E736F237CD60F00F90ABE /* MLPhotoBrowserCustomToolBarView.m */; };
+		4A8E7380237CD60F00F90ABE /* MLPhotoBrowserPhotoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A8E7370237CD60F00F90ABE /* MLPhotoBrowserPhotoView.m */; };
+		4A8E7381237CD60F00F90ABE /* MLPhotoBrowserPhotoImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A8E7371237CD60F00F90ABE /* MLPhotoBrowserPhotoImageView.m */; };
+		4A8E7383237CD86400F90ABE /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A8E7382237CD86400F90ABE /* SystemConfiguration.framework */; };
+		4A8E7385237CD87500F90ABE /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A8E7384237CD87500F90ABE /* libz.tbd */; };
+		4A8E7387237CD88000F90ABE /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A8E7386237CD88000F90ABE /* libsqlite3.0.tbd */; };
+		4A8E7389237CD88C00F90ABE /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A8E7388237CD88C00F90ABE /* libc++.tbd */; };
+		4A8E738B237CD89700F90ABE /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A8E738A237CD89700F90ABE /* Security.framework */; };
+		4A8E738D237CD8A400F90ABE /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A8E738C237CD8A400F90ABE /* CoreTelephony.framework */; };
+		4A8E738F237CD8AD00F90ABE /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A8E738E237CD8AD00F90ABE /* CFNetwork.framework */; };
+		4A8E7391237CDCD700F90ABE /* WechatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8E7390237CDCD700F90ABE /* WechatViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3B5FC38F2AD125ECDABCFEE6 /* Pods_wekol.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_wekol.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A700A7F2379200C00D76ED3 /* wekol.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = wekol.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A700A822379200C00D76ED3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4A700A842379200C00D76ED3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -26,6 +56,53 @@
 		4A700A8E2379200D00D76ED3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4A700A912379200D00D76ED3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4A700A932379200D00D76ED3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4A700A992379202400D76ED3 /* wekol.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = wekol.entitlements; sourceTree = "<group>"; };
+		4A8E7339237CD26F00F90ABE /* WXApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApi.h; sourceTree = "<group>"; };
+		4A8E733A237CD26F00F90ABE /* WXApiObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApiObject.h; sourceTree = "<group>"; };
+		4A8E733B237CD26F00F90ABE /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
+		4A8E733C237CD26F00F90ABE /* WechatAuthSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WechatAuthSDK.h; sourceTree = "<group>"; };
+		4A8E733D237CD26F00F90ABE /* libWeChatSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libWeChatSDK.a; sourceTree = "<group>"; };
+		4A8E7348237CD2AC00F90ABE /* wekol-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "wekol-Bridging-Header.h"; sourceTree = "<group>"; };
+		4A8E734B237CD55E00F90ABE /* CollectionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollectionCell.xib; sourceTree = "<group>"; };
+		4A8E734C237CD55E00F90ABE /* MainCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainCell.xib; sourceTree = "<group>"; };
+		4A8E734D237CD55E00F90ABE /* MainCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainCell.swift; sourceTree = "<group>"; };
+		4A8E734E237CD55E00F90ABE /* CollectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionCell.swift; sourceTree = "<group>"; };
+		4A8E734F237CD55E00F90ABE /* MainModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainModel.swift; sourceTree = "<group>"; };
+		4A8E7357237CD60F00F90ABE /* DALabeledCircularProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DALabeledCircularProgressView.m; sourceTree = "<group>"; };
+		4A8E7358237CD60F00F90ABE /* DACircularProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DACircularProgressView.m; sourceTree = "<group>"; };
+		4A8E7359237CD60F00F90ABE /* DALabeledCircularProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DALabeledCircularProgressView.h; sourceTree = "<group>"; };
+		4A8E735A237CD60F00F90ABE /* DACircularProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DACircularProgressView.h; sourceTree = "<group>"; };
+		4A8E735C237CD60F00F90ABE /* MLPhotoBrowser.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MLPhotoBrowser.bundle; sourceTree = "<group>"; };
+		4A8E735E237CD60F00F90ABE /* UIImage+MLBrowserPhotoImageForBundle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+MLBrowserPhotoImageForBundle.m"; sourceTree = "<group>"; };
+		4A8E7360237CD60F00F90ABE /* MLPhotoBrowserAssets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MLPhotoBrowserAssets.h; sourceTree = "<group>"; };
+		4A8E7361237CD60F00F90ABE /* MLPhotoBrowserPhoto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MLPhotoBrowserPhoto.m; sourceTree = "<group>"; };
+		4A8E7362237CD60F00F90ABE /* MLPhotoBrowserDatas.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MLPhotoBrowserDatas.m; sourceTree = "<group>"; };
+		4A8E7363237CD60F00F90ABE /* MLPhotoBrowserAssets.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MLPhotoBrowserAssets.m; sourceTree = "<group>"; };
+		4A8E7364237CD60F00F90ABE /* MLPhotoBrowserPhoto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MLPhotoBrowserPhoto.h; sourceTree = "<group>"; };
+		4A8E7365237CD60F00F90ABE /* MLPhotoBrowserDatas.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MLPhotoBrowserDatas.h; sourceTree = "<group>"; };
+		4A8E7367237CD60F00F90ABE /* MLPhotoBrowserViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MLPhotoBrowserViewController.m; sourceTree = "<group>"; };
+		4A8E7368237CD60F00F90ABE /* MLPhotoBrowserSignleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MLPhotoBrowserSignleViewController.h; sourceTree = "<group>"; };
+		4A8E7369237CD60F00F90ABE /* MLPhotoBrowserViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MLPhotoBrowserViewController.h; sourceTree = "<group>"; };
+		4A8E736A237CD60F00F90ABE /* MLPhotoBrowserSignleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MLPhotoBrowserSignleViewController.m; sourceTree = "<group>"; };
+		4A8E736B237CD60F00F90ABE /* UIImage+MLBrowserPhotoImageForBundle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+MLBrowserPhotoImageForBundle.h"; sourceTree = "<group>"; };
+		4A8E736D237CD60F00F90ABE /* MLPhotoBrowserPhotoScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MLPhotoBrowserPhotoScrollView.m; sourceTree = "<group>"; };
+		4A8E736E237CD60F00F90ABE /* MLPhotoBrowserPhotoImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MLPhotoBrowserPhotoImageView.h; sourceTree = "<group>"; };
+		4A8E736F237CD60F00F90ABE /* MLPhotoBrowserCustomToolBarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MLPhotoBrowserCustomToolBarView.m; sourceTree = "<group>"; };
+		4A8E7370237CD60F00F90ABE /* MLPhotoBrowserPhotoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MLPhotoBrowserPhotoView.m; sourceTree = "<group>"; };
+		4A8E7371237CD60F00F90ABE /* MLPhotoBrowserPhotoImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MLPhotoBrowserPhotoImageView.m; sourceTree = "<group>"; };
+		4A8E7372237CD60F00F90ABE /* MLPhotoBrowserPhotoScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MLPhotoBrowserPhotoScrollView.h; sourceTree = "<group>"; };
+		4A8E7373237CD60F00F90ABE /* MLPhotoBrowserCustomToolBarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MLPhotoBrowserCustomToolBarView.h; sourceTree = "<group>"; };
+		4A8E7374237CD60F00F90ABE /* MLPhotoBrowserPhotoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MLPhotoBrowserPhotoView.h; sourceTree = "<group>"; };
+		4A8E7382237CD86400F90ABE /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		4A8E7384237CD87500F90ABE /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		4A8E7386237CD88000F90ABE /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		4A8E7388237CD88C00F90ABE /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		4A8E738A237CD89700F90ABE /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		4A8E738C237CD8A400F90ABE /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		4A8E738E237CD8AD00F90ABE /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		4A8E7390237CDCD700F90ABE /* WechatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WechatViewController.swift; sourceTree = "<group>"; };
+		625055A0D6A7B4F2BAC74152 /* Pods-wekol.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-wekol.debug.xcconfig"; path = "Target Support Files/Pods-wekol/Pods-wekol.debug.xcconfig"; sourceTree = "<group>"; };
+		AF51DB9660108AC83309B80C /* Pods-wekol.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-wekol.release.xcconfig"; path = "Target Support Files/Pods-wekol/Pods-wekol.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +110,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A8E738F237CD8AD00F90ABE /* CFNetwork.framework in Frameworks */,
+				4A8E738D237CD8A400F90ABE /* CoreTelephony.framework in Frameworks */,
+				4A8E738B237CD89700F90ABE /* Security.framework in Frameworks */,
+				4A8E7389237CD88C00F90ABE /* libc++.tbd in Frameworks */,
+				4A8E7387237CD88000F90ABE /* libsqlite3.0.tbd in Frameworks */,
+				4A8E7385237CD87500F90ABE /* libz.tbd in Frameworks */,
+				4A8E7383237CD86400F90ABE /* SystemConfiguration.framework in Frameworks */,
+				4A8E733F237CD26F00F90ABE /* libWeChatSDK.a in Frameworks */,
+				2F8F4E8A6CF634FB406BC9F8 /* Pods_wekol.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,8 +128,12 @@
 		4A700A762379200C00D76ED3 = {
 			isa = PBXGroup;
 			children = (
+				4A8E7355237CD60F00F90ABE /* OCThird */,
+				4A8E7338237CD26F00F90ABE /* WeChatSDK1.8.6.1 */,
 				4A700A812379200C00D76ED3 /* wekol */,
 				4A700A802379200C00D76ED3 /* Products */,
+				F6F128035877DE63CB14CE38 /* Pods */,
+				CFB450FF9657C08E63E5B0D0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,6 +148,12 @@
 		4A700A812379200C00D76ED3 /* wekol */ = {
 			isa = PBXGroup;
 			children = (
+				4A700A992379202400D76ED3 /* wekol.entitlements */,
+				4A8E734E237CD55E00F90ABE /* CollectionCell.swift */,
+				4A8E734B237CD55E00F90ABE /* CollectionCell.xib */,
+				4A8E734D237CD55E00F90ABE /* MainCell.swift */,
+				4A8E734C237CD55E00F90ABE /* MainCell.xib */,
+				4A8E734F237CD55E00F90ABE /* MainModel.swift */,
 				4A700A822379200C00D76ED3 /* AppDelegate.swift */,
 				4A700A842379200C00D76ED3 /* SceneDelegate.swift */,
 				4A700A862379200C00D76ED3 /* ViewController.swift */,
@@ -66,8 +162,126 @@
 				4A700A902379200D00D76ED3 /* LaunchScreen.storyboard */,
 				4A700A932379200D00D76ED3 /* Info.plist */,
 				4A700A8B2379200C00D76ED3 /* wekol.xcdatamodeld */,
+				4A8E7348237CD2AC00F90ABE /* wekol-Bridging-Header.h */,
+				4A8E7390237CDCD700F90ABE /* WechatViewController.swift */,
 			);
 			path = wekol;
+			sourceTree = "<group>";
+		};
+		4A8E7338237CD26F00F90ABE /* WeChatSDK1.8.6.1 */ = {
+			isa = PBXGroup;
+			children = (
+				4A8E7339237CD26F00F90ABE /* WXApi.h */,
+				4A8E733A237CD26F00F90ABE /* WXApiObject.h */,
+				4A8E733B237CD26F00F90ABE /* README.txt */,
+				4A8E733C237CD26F00F90ABE /* WechatAuthSDK.h */,
+				4A8E733D237CD26F00F90ABE /* libWeChatSDK.a */,
+			);
+			path = WeChatSDK1.8.6.1;
+			sourceTree = "<group>";
+		};
+		4A8E7355237CD60F00F90ABE /* OCThird */ = {
+			isa = PBXGroup;
+			children = (
+				4A8E7356237CD60F00F90ABE /* DACircularProgress */,
+				4A8E735B237CD60F00F90ABE /* MLPhotoBrowser */,
+			);
+			path = OCThird;
+			sourceTree = "<group>";
+		};
+		4A8E7356237CD60F00F90ABE /* DACircularProgress */ = {
+			isa = PBXGroup;
+			children = (
+				4A8E7357237CD60F00F90ABE /* DALabeledCircularProgressView.m */,
+				4A8E7358237CD60F00F90ABE /* DACircularProgressView.m */,
+				4A8E7359237CD60F00F90ABE /* DALabeledCircularProgressView.h */,
+				4A8E735A237CD60F00F90ABE /* DACircularProgressView.h */,
+			);
+			path = DACircularProgress;
+			sourceTree = "<group>";
+		};
+		4A8E735B237CD60F00F90ABE /* MLPhotoBrowser */ = {
+			isa = PBXGroup;
+			children = (
+				4A8E735C237CD60F00F90ABE /* MLPhotoBrowser.bundle */,
+				4A8E735D237CD60F00F90ABE /* Classes */,
+			);
+			path = MLPhotoBrowser;
+			sourceTree = "<group>";
+		};
+		4A8E735D237CD60F00F90ABE /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				4A8E735E237CD60F00F90ABE /* UIImage+MLBrowserPhotoImageForBundle.m */,
+				4A8E735F237CD60F00F90ABE /* Models */,
+				4A8E7366237CD60F00F90ABE /* ViewControllers */,
+				4A8E736B237CD60F00F90ABE /* UIImage+MLBrowserPhotoImageForBundle.h */,
+				4A8E736C237CD60F00F90ABE /* Views */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		4A8E735F237CD60F00F90ABE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4A8E7360237CD60F00F90ABE /* MLPhotoBrowserAssets.h */,
+				4A8E7361237CD60F00F90ABE /* MLPhotoBrowserPhoto.m */,
+				4A8E7362237CD60F00F90ABE /* MLPhotoBrowserDatas.m */,
+				4A8E7363237CD60F00F90ABE /* MLPhotoBrowserAssets.m */,
+				4A8E7364237CD60F00F90ABE /* MLPhotoBrowserPhoto.h */,
+				4A8E7365237CD60F00F90ABE /* MLPhotoBrowserDatas.h */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		4A8E7366237CD60F00F90ABE /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				4A8E7367237CD60F00F90ABE /* MLPhotoBrowserViewController.m */,
+				4A8E7368237CD60F00F90ABE /* MLPhotoBrowserSignleViewController.h */,
+				4A8E7369237CD60F00F90ABE /* MLPhotoBrowserViewController.h */,
+				4A8E736A237CD60F00F90ABE /* MLPhotoBrowserSignleViewController.m */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		4A8E736C237CD60F00F90ABE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4A8E736D237CD60F00F90ABE /* MLPhotoBrowserPhotoScrollView.m */,
+				4A8E736E237CD60F00F90ABE /* MLPhotoBrowserPhotoImageView.h */,
+				4A8E736F237CD60F00F90ABE /* MLPhotoBrowserCustomToolBarView.m */,
+				4A8E7370237CD60F00F90ABE /* MLPhotoBrowserPhotoView.m */,
+				4A8E7371237CD60F00F90ABE /* MLPhotoBrowserPhotoImageView.m */,
+				4A8E7372237CD60F00F90ABE /* MLPhotoBrowserPhotoScrollView.h */,
+				4A8E7373237CD60F00F90ABE /* MLPhotoBrowserCustomToolBarView.h */,
+				4A8E7374237CD60F00F90ABE /* MLPhotoBrowserPhotoView.h */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		CFB450FF9657C08E63E5B0D0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4A8E738E237CD8AD00F90ABE /* CFNetwork.framework */,
+				4A8E738C237CD8A400F90ABE /* CoreTelephony.framework */,
+				4A8E738A237CD89700F90ABE /* Security.framework */,
+				4A8E7388237CD88C00F90ABE /* libc++.tbd */,
+				4A8E7386237CD88000F90ABE /* libsqlite3.0.tbd */,
+				4A8E7384237CD87500F90ABE /* libz.tbd */,
+				4A8E7382237CD86400F90ABE /* SystemConfiguration.framework */,
+				3B5FC38F2AD125ECDABCFEE6 /* Pods_wekol.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F6F128035877DE63CB14CE38 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				625055A0D6A7B4F2BAC74152 /* Pods-wekol.debug.xcconfig */,
+				AF51DB9660108AC83309B80C /* Pods-wekol.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -77,9 +291,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4A700A962379200D00D76ED3 /* Build configuration list for PBXNativeTarget "wekol" */;
 			buildPhases = (
+				DF67EB5E0F1FC11605F0BEE9 /* [CP] Check Pods Manifest.lock */,
 				4A700A7B2379200C00D76ED3 /* Sources */,
 				4A700A7C2379200C00D76ED3 /* Frameworks */,
 				4A700A7D2379200C00D76ED3 /* Resources */,
+				6170669C06054ADDAB56989B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -102,6 +318,7 @@
 				TargetAttributes = {
 					4A700A7E2379200C00D76ED3 = {
 						CreatedOnToolsVersion = 11.2;
+						LastSwiftMigration = 1120;
 					};
 				};
 			};
@@ -128,23 +345,85 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A8E7350237CD55E00F90ABE /* CollectionCell.xib in Resources */,
+				4A8E7377237CD60F00F90ABE /* MLPhotoBrowser.bundle in Resources */,
 				4A700A922379200D00D76ED3 /* LaunchScreen.storyboard in Resources */,
+				4A8E7351237CD55E00F90ABE /* MainCell.xib in Resources */,
 				4A700A8F2379200D00D76ED3 /* Assets.xcassets in Resources */,
 				4A700A8A2379200C00D76ED3 /* Main.storyboard in Resources */,
+				4A8E733E237CD26F00F90ABE /* README.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6170669C06054ADDAB56989B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-wekol/Pods-wekol-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-wekol/Pods-wekol-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-wekol/Pods-wekol-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DF67EB5E0F1FC11605F0BEE9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-wekol-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4A700A7B2379200C00D76ED3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A8E737B237CD60F00F90ABE /* MLPhotoBrowserAssets.m in Sources */,
 				4A700A8D2379200C00D76ED3 /* wekol.xcdatamodeld in Sources */,
+				4A8E7380237CD60F00F90ABE /* MLPhotoBrowserPhotoView.m in Sources */,
 				4A700A872379200C00D76ED3 /* ViewController.swift in Sources */,
+				4A8E737D237CD60F00F90ABE /* MLPhotoBrowserSignleViewController.m in Sources */,
 				4A700A832379200C00D76ED3 /* AppDelegate.swift in Sources */,
+				4A8E737E237CD60F00F90ABE /* MLPhotoBrowserPhotoScrollView.m in Sources */,
+				4A8E7379237CD60F00F90ABE /* MLPhotoBrowserPhoto.m in Sources */,
+				4A8E737C237CD60F00F90ABE /* MLPhotoBrowserViewController.m in Sources */,
+				4A8E7354237CD55E00F90ABE /* MainModel.swift in Sources */,
+				4A8E7378237CD60F00F90ABE /* UIImage+MLBrowserPhotoImageForBundle.m in Sources */,
+				4A8E7376237CD60F00F90ABE /* DACircularProgressView.m in Sources */,
 				4A700A852379200C00D76ED3 /* SceneDelegate.swift in Sources */,
+				4A8E737A237CD60F00F90ABE /* MLPhotoBrowserDatas.m in Sources */,
+				4A8E737F237CD60F00F90ABE /* MLPhotoBrowserCustomToolBarView.m in Sources */,
+				4A8E7381237CD60F00F90ABE /* MLPhotoBrowserPhotoImageView.m in Sources */,
+				4A8E7391237CDCD700F90ABE /* WechatViewController.swift in Sources */,
+				4A8E7375237CD60F00F90ABE /* DALabeledCircularProgressView.m in Sources */,
+				4A8E7352237CD55E00F90ABE /* MainCell.swift in Sources */,
+				4A8E7353237CD55E00F90ABE /* CollectionCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -220,7 +499,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -274,7 +553,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -286,8 +565,11 @@
 		};
 		4A700A972379200D00D76ED3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 625055A0D6A7B4F2BAC74152 /* Pods-wekol.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = wekol/wekol.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 859272NEM5;
 				INFOPLIST_FILE = wekol/Info.plist;
@@ -295,8 +577,14 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/WeChatSDK1.8.6.1",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.eidetika.wekol;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "wekol/wekol-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -304,8 +592,11 @@
 		};
 		4A700A982379200D00D76ED3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AF51DB9660108AC83309B80C /* Pods-wekol.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = wekol/wekol.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 859272NEM5;
 				INFOPLIST_FILE = wekol/Info.plist;
@@ -313,8 +604,13 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/WeChatSDK1.8.6.1",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.eidetika.wekol;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "wekol/wekol-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

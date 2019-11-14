@@ -8,17 +8,131 @@
 
 import UIKit
 import CoreData
-
+let ScreenHeight = UIScreen.main.bounds.size.height
+let ScreenWidth = UIScreen.main.bounds.size.width
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate, WXApiDelegate {
 
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        WXApi.registerApp("wxa42e11f2c1bc528b",universalLink: "https://www.wekol.com.au/")
         // Override point for customization after application launch.
         return true
     }
-
+    func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey : Any] = [:]) -> Bool {
+        let urlKey: String = options[UIApplication.OpenURLOptionsKey.sourceApplication] as! String
+         
+        if urlKey == "com.tencent.xin" {
+                  // 微信 的回调
+                  return  WXApi.handleOpen(url, delegate: self)
+              }
+              
+              return true
+    }
+    func onReq(_ req: BaseReq!) {
+        
+    }
+    func onResp(_ resp: BaseResp!) {
+        let sendRes: SendAuthResp? = resp as? SendAuthResp
+        let queue = DispatchQueue(label: "wechatLoginQueue")
+        queue.async {
+            
+            print("async: \(Thread.current)")
+            if let sd = sendRes {
+                if sd.errCode == 0 {
+                    
+                    guard (sd.code) != nil else {
+                        return
+                    }
+                    // 第一步: 获取到code, 根据code去请求accessToken
+                    self.requestAccessToken((sd.code)!)
+                } else {
+                    
+                    DispatchQueue.main.async {
+                        // 授权失败
+                    }
+                }
+            } else {
+                
+                DispatchQueue.main.async {
+                   // 异常
+                }
+            }
+        }
+    }
+    private func requestAccessToken(_ code: String) {
+        // 第二步: 请求accessToken
+       let urlStr = "https://api.weixin.qq.com/sns/oauth2/access_token?appid=\("wxa42e11f2c1bc528b")&secret=\("49cc72b6f68a58655455244f1cbde412")&code=\(code)&grant_type=authorization_code"
+               
+        let url = URL(string: urlStr)
+        
+        do {
+            //                    let responseStr = try String.init(contentsOf: url!, encoding: String.Encoding.utf8)
+            
+            let responseData = try Data.init(contentsOf: url!, options: Data.ReadingOptions.alwaysMapped)
+            
+            let dic = try JSONSerialization.jsonObject(with: responseData, options: JSONSerialization.ReadingOptions.allowFragments) as? Dictionary<String, Any>
+            
+            guard dic != nil else {
+                DispatchQueue.main.async {
+                    // 获取授权信息异常
+                }
+                return
+            }
+            
+            guard dic!["access_token"] != nil else {
+                DispatchQueue.main.async {
+                   // 获取授权信息异常
+                }
+                return
+            }
+            
+            guard dic!["openid"] != nil else {
+                DispatchQueue.main.async {
+                    // 获取授权信息异常
+                }
+                return
+            }
+            // 根据获取到的accessToken来请求用户信息
+            self.requestUserInfo(dic!["access_token"]! as! String, openID: dic!["openid"]! as! String)
+        } catch {
+            DispatchQueue.main.async {
+                // 获取授权信息异常
+            }
+        }
+    }
+    private func requestUserInfo(_ accessToken: String, openID: String) {
+        
+        let urlStr = "https://api.weixin.qq.com/sns/userinfo?access_token=\(accessToken)&openid=\(openID)"
+        
+        let url = URL(string: urlStr)
+        
+        do {
+            //                    let responseStr = try String.init(contentsOf: url!, encoding: String.Encoding.utf8)
+            
+            let responseData = try Data.init(contentsOf: url!, options: Data.ReadingOptions.alwaysMapped)
+            
+            let dic = try JSONSerialization.jsonObject(with: responseData, options: JSONSerialization.ReadingOptions.allowFragments) as? Dictionary<String, Any>
+            
+            guard dic != nil else {
+                DispatchQueue.main.async {
+                    // 获取授权信息异常
+                }
+                
+                return
+            }
+            
+            if let dic = dic {
+                
+                // 这个字典(dic)内包含了我们所请求回的相关用户信息
+            }
+        } catch {
+            DispatchQueue.main.async {
+               // 获取授权信息异常
+            }
+        }
+    }
     // MARK: UISceneSession Lifecycle
 
     func application(_ application: UIApplication, configurationForConnecting connectingSceneSession: UISceneSession, options: UIScene.ConnectionOptions) -> UISceneConfiguration {

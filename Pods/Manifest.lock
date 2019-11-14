@@ -1,0 +1,39 @@
+PODS:
+  - Alamofire (4.9.1)
+  - AlamofireImage (3.6.0):
+    - Alamofire (~> 4.9)
+  - SDWebImage (5.3.1):
+    - SDWebImage/Core (= 5.3.1)
+  - SDWebImage/Core (5.3.1)
+  - SwiftyJSON (5.0.0)
+  - WechatOpenSDK (1.8.6)
+  - YYModel (1.0.4)
+
+DEPENDENCIES:
+  - Alamofire
+  - AlamofireImage
+  - SDWebImage
+  - SwiftyJSON
+  - WechatOpenSDK (= 1.8.6)
+  - YYModel
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - AlamofireImage
+    - SDWebImage
+    - SwiftyJSON
+    - WechatOpenSDK
+    - YYModel
+
+SPEC CHECKSUMS:
+  Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
+  AlamofireImage: be9963c6582d68b39e89191f64c82a7d7bf40fdd
+  SDWebImage: 7137d57385fb632129838c1e6ab9528a22c666cc
+  SwiftyJSON: 36413e04c44ee145039d332b4f4e2d3e8d6c4db7
+  WechatOpenSDK: 368ae03b72ee3ea1328c4f11326fbb5d2721d118
+  YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
+
+PODFILE CHECKSUM: ddb53c6d89f5fbcc50a86bd3afc4b589b498590c
+
+COCOAPODS: 1.8.4
