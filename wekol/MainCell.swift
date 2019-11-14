@@ -13,6 +13,7 @@
 // 该demo地址：https://github.com/FighterLightning/ZHFWXImageCollect.git
 
 import UIKit
+
 private let collectionCell = "collectionCell"
 let edgeMargin : CGFloat = 5
 class MainCell: UITableViewCell {
